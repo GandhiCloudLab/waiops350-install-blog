@@ -8,14 +8,14 @@ The following 3 deployments are possible using this script and to be installed i
 - IBM Cloud Pak for Watson AIOps Event Manager 1.6.6 (powered by IBM® Netcool® Operations Insight®)
 - IBM Cloud Pak for Watson AIOps Infrastructure Automation 3.5.0
 
-Installation scripts are available [here](./). Download and keep the files local.
-
 This script uses `ibmc-file-gold-gid` strorage class available in ROKS as a storage option. By changing the storage-class in the `00-config.sh` file, the same script can be used to install on other Openshift as well.
 
 ---
 ## 1. Installing AI Manager
 
 Installation scripts are available here [01-install-aimgr-on-roks/files](./01-install-aimgr-on-roks/files).
+
+Download and keep the files local.
 
 ### 1.1 Update Properties
 
@@ -85,6 +85,8 @@ The script is based out of https://www.ibm.com/docs/en/cloud-paks/cloud-pak-wats
 
 Installation scripts are available here [02-install-eventmgr-on-roks/files](./02-install-eventmgr-on-roks/files).
 
+Download and keep the files local.
+
 ### 2.1 Update Properties
 
 Update the below properties in [02-install-eventmgr-on-roks/files/00-config.sh](./02-install-eventmgr-on-roks/files/00-config.sh) file .
@@ -148,8 +150,9 @@ The script is based out of https://www.ibm.com/docs/en/cloud-paks/cloud-pak-wats
 
 ### 3.Installing Infra Automation
 
-
 Installation scripts are available here [03-install-infra-automation-on-roks/files](./03-install-infra-automation-on-roks/files).
+
+Download and keep the files local.
 
 ### 3.1 Update Properties
 
