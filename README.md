@@ -1,6 +1,6 @@
-# IBM Cloud Pak for Watson AIOps 3.5.0 Installation
+# Simple scripts to install Watson AIOps 3.5.0
 
-This document explains about Installing IBM Watson AIOps 3.5.0 on IBM ROKS by using the installation scripts. 
+This document explains about how to install IBM Watson AIOps 3.5.0 on IBM ROKS by using the installation scripts. 
 
 The following 3 deployments are possible using this script and to be installed in different clusters.
 
