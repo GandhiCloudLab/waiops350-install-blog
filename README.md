@@ -8,17 +8,19 @@ The following 3 deployments are possible using this script and to be installed i
 - IBM Cloud Pak for Watson AIOps Event Manager 1.6.6 (powered by IBM® Netcool® Operations Insight®)
 - IBM Cloud Pak for Watson AIOps Infrastructure Automation 3.5.0
 
-Installation scripts are available [here](.). Download and keep the files local.
+Installation scripts are available [here](./). Download and keep the files local.
 
 This script uses `ibmc-file-gold-gid` strorage class available in ROKS as a storage option. By changing the storage-class in the `00-config.sh` file, the same script can be used to install on other Openshift as well.
 
+---
 ## 1. Installing AI Manager
 
 Installation scripts are available here [01-install-aimgr-on-roks/files](./01-install-aimgr-on-roks/files).
 
 ### 1.1 Update Properties
 
-Update the below properties in `01-install-aimgr-on-roks/files/00-config.sh` file .
+Update the below properties in [01-install-aimgr-on-roks/files/00-config.sh](./01-install-aimgr-on-roks/files/00-config.sh) file .
+
 
 #### Entitlement Key
 ```
@@ -37,7 +39,7 @@ Login to OCP cluster using  `oc login` command .
 
 ### 1.3. Run the install script
 
-Goto the `01-install-aimgr-on-roks/files` folder and Run the install script as like below.
+Goto the [01-install-aimgr-on-roks/files](./01-install-aimgr-on-roks/files) folder and Run the install script as like below.
 
 ```
 cd 01-install-aimgr-on-roks/files
@@ -77,6 +79,7 @@ sh 19-print-url-usr-pwd.sh
 
 The script is based out of https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli
 
+---
 
 ### 2. Installing Event Manager
 
@@ -84,7 +87,7 @@ Installation scripts are available here [02-install-eventmgr-on-roks/files](./02
 
 ### 2.1 Update Properties
 
-Update the below properties in `02-install-eventmgr-on-roks/files/00-config.sh` file .
+Update the below properties in [02-install-eventmgr-on-roks/files/00-config.sh](./02-install-eventmgr-on-roks/files/00-config.sh) file .
 
 #### Entitlement Key
 ```
@@ -102,7 +105,7 @@ Login to OCP cluster using  `oc login` command .
 
 ### 2.3. Run the install script
 
-Goto the `02-install-eventmgr-on-roks/files` folder and Run the install script as like below.
+Goto the [02-install-eventmgr-on-roks/files](./02-install-eventmgr-on-roks/files) folder and Run the install script as like below.
 
 ```
 cd 02-install-eventmgr-on-roks/files
@@ -114,7 +117,7 @@ sh 10-install.sh
 - Keep checking the logs for the status. 
 - The same script can be run again and again if the install stopped for any reason.
 
-### 1.4. Output
+### 2.4. Output
  
 The installation would be completed and the output could be like this.
 
@@ -129,7 +132,7 @@ PASSWORD: rJ........u
 
 You can use this to login into the WAIOps Console.
 
-### 1.5. Printing URL, Usr and Pwd
+### 2.5. Printing URL, Usr and Pwd
 
 To get the EventManager URL, user and password anytime after EventManager install, you can run the below command. This will print the output as like above.
 
@@ -150,7 +153,7 @@ Installation scripts are available here [03-install-infra-automation-on-roks/fil
 
 ### 3.1 Update Properties
 
-Update the below properties in `03-install-infra-automation-on-roks/files/00-config.sh` file .
+Update the below properties in [03-install-infra-automation-on-roks/files/00-config.sh](./03-install-infra-automation-on-roks/files/00-config.sh) file .
 
 #### Entitlement Key
 ```
@@ -174,7 +177,7 @@ Login to OCP cluster using  `oc login` command .
 
 ### 3.3. Run the install script
 
-Goto the `03-install-infra-automation-on-roks/files` folder and Run the install script as like below.
+Goto the [03-install-infra-automation-on-roks/files](./03-install-infra-automation-on-roks/files) folder and Run the install script as like below.
 
 ```
 cd 03-install-infra-automation-on-roks/files
@@ -214,6 +217,7 @@ sh 19-print-url-usr-pwd.sh
 
 - Online installation of Infrastructure Automation
 https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=automation-online-installation
+
 ## Note
 
 This script can be installed on top existing IBM Watson AIOps AI Manager 3.5.0 instance.
